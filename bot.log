@@ -1,0 +1,344 @@
+2020-06-03 12:45:48,668 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:45:53,125 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:45:53,126 - __main__ - WARNING - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2020-06-03 12:45:58,860 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:45:58,860 - __main__ - WARNING - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2020-06-03 12:46:05,695 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:46:05,695 - __main__ - WARNING - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2020-06-03 12:46:11,422 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:46:11,422 - __main__ - WARNING - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2020-06-03 12:46:11,498 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 12:46:15,380 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:46:20,784 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:46:20,784 - __main__ - WARNING - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2020-06-03 12:46:32,483 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:46:32,484 - __main__ - WARNING - Update "None" caused error "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+2020-06-03 12:46:46,260 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 12:46:48,172 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:46:49,755 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:46:56,589 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 23, in handleAll
+    userId = update.message.chat_id
+AttributeError: 'CallbackContext' object has no attribute 'message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 54, in handleAll
+    bot.send_message(update.message.chat_id, text='Error :|')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:47:03,521 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 23, in handleAll
+    userId = update.message.chat_id
+AttributeError: 'CallbackContext' object has no attribute 'message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 54, in handleAll
+    bot.send_message(update.message.chat_id, text='Error :|')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:47:10,333 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:47:10,334 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:47:40,052 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:47:40,052 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:47:50,364 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 12:47:51,696 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:48:07,026 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:48:08,913 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:48:22,640 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:48:22,641 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:48:35,140 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 12:48:44,587 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:48:56,763 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:48:56,763 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:48:59,499 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:49:30,974 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:49:30,975 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:49:37,858 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 12:49:42,491 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:49:53,772 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:50:03,755 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:50:05,073 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:50:05,073 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:50:39,204 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:50:39,204 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:50:45,536 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 12:50:50,789 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:50:59,603 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:51:02,952 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:51:06,199 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:51:13,290 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:51:13,293 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:51:16,116 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:51:47,384 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:51:47,384 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:51:53,251 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 12:52:02,125 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 12:52:05,983 - telegram.ext.dispatcher - ERROR - An error was raised while processing the update and an uncaught error was raised while handling the error with an error_handler
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/teleg.py", line 22, in handleAll
+    bot.send_message(update.message.chat_id, text='xxxx')
+AttributeError: 'Update' object has no attribute 'send_message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 356, in process_update
+    self.dispatch_error(update, e)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:52:21,478 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2020-06-03 12:52:21,478 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while handling the error
+Traceback (most recent call last):
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 329, in process_update
+    self.dispatch_error(None, update)
+  File "/Users/oleksandrboiko/Projects/python/secondTypeTelegramBot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 525, in dispatch_error
+    callback(update, CallbackContext.from_error(update, error, self))
+TypeError: error() missing 1 required positional argument: 'error'
+2020-06-03 12:52:41,410 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 13:23:39,145 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 13:23:59,251 - __main__ - WARNING - update "{'update_id': 720650478, 'message': {'message_id': 191, 'date': 1591179839, 'chat': {'id': 260761974, 'type': 'private', 'first_name': 'Oleksandr', 'last_name': 'Boiko'}, 'entities': [], 'caption_entities': [], 'photo': [{'file_id': 'AgACAgIAAxkBAAO_Xtd6PzuZUt6ZzqA7J12B8G50hosAAhSwMRuBVrhKwp5zFQy90KxvQn2RLgADAQADAgADbQADfQkEAAEaBA', 'file_unique_id': 'AQADb0J9kS4AA30JBAAB', 'width': 60, 'height': 60, 'file_size': 1443}], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 260761974, 'first_name': 'Oleksandr', 'is_bot': False, 'last_name': 'Boiko', 'language_code': 'en'}}, '_effective_user': {'id': 260761974, 'first_name': 'Oleksandr', 'is_bot': False, 'last_name': 'Boiko', 'language_code': 'en'}, '_effective_chat': {'id': 260761974, 'type': 'private', 'first_name': 'Oleksandr', 'last_name': 'Boiko'}, '_effective_message': {'message_id': 191, 'date': 1591179839, 'chat': {'id': 260761974, 'type': 'private', 'first_name': 'Oleksandr', 'last_name': 'Boiko'}, 'entities': [], 'caption_entities': [], 'photo': [{'file_id': 'AgACAgIAAxkBAAO_Xtd6PzuZUt6ZzqA7J12B8G50hosAAhSwMRuBVrhKwp5zFQy90KxvQn2RLgADAQADAgADbQADfQkEAAEaBA', 'file_unique_id': 'AQADb0J9kS4AA30JBAAB', 'width': 60, 'height': 60, 'file_size': 1443}], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 260761974, 'first_name': 'Oleksandr', 'is_bot': False, 'last_name': 'Boiko', 'language_code': 'en'}}}" casused error "'CallbackContext' object has no attribute 'get_file'"
+2020-06-03 13:24:22,339 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2020-06-03 13:24:30,159 - __main__ - INFO - Loading handlers for telegram bot
+2020-06-03 13:30:49,135 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
